@@ -27,6 +27,30 @@ body {
   font-size:40px;
 }
 
+.vertical-alignment-helper {
+  display:table;
+  height: 100%;
+  width: 100%;
+  pointer-events:none; /* This makes sure that we can still click outside of the modal to close it */
+}
+.vertical-align-center {
+  /* To center vertically */
+  display: table-cell;
+  vertical-align: middle;
+  pointer-events:none;
+}
+.modal-content {
+  width:inherit;
+  max-width:750px;
+  height:inherit;
+  margin: 0 auto;
+  pointer-events: all;
+}
+
+object{
+  height:600px;
+}
+
 h1,
 h2,
 h3,
@@ -291,6 +315,7 @@ header.masthead h2 {
   .portfolio-modal .portfolio-modal-dialog h2 {
     font-size: 3rem;
   }
+
 }
 
 .floating-label-form-group {
@@ -404,4 +429,10 @@ a:focus, a:hover, a:active {
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
   background-color: #1a252f;
   border-color: #1a252f;
+}
+
+@media(max-width:576px){
+  object{
+    height:400px;
+  }
 }

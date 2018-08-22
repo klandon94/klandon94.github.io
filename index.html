@@ -51,10 +51,27 @@
         <h1 class="text-uppercase mb-0">Kenny Landon</h1>
         <hr class="star-light">
         <h2 class="font-weight-light mb-0" id="fullstack">Full Stack Web Developer</h2><br>
-        <a href="./Kenny_Landon.pdf" class="btn btn-danger" download="Resume.pdf">View Resume</a>
+        <a data-toggle="modal" href="#modal1" class="btn btn-danger">View Resume</a>
+        <a href="./Kenny_Landon.pdf" class="btn btn-danger" download="Resume.pdf">Download Resume</a>
         <img class="img-fluid mb-5 d-block mx-auto" src="img/mypic.jpg" alt="" id="profilepic">
       </div>
     </header>
+
+    <div id="modal1" class="modal" tabindex="-1">
+      <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1>RESUME</h1>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <object type="application/pdf" data="./Kenny_Landon.pdf" width="100%" id="pdf"></object>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- About Section -->
     <section class="mb-0" id="about">
