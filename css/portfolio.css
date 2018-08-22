@@ -27,14 +27,18 @@ body {
   font-size:40px;
 }
 
+#bottom{
+  display:flex;
+  justify-content:space-around;
+}
+
 .vertical-alignment-helper {
   display:table;
   height: 100%;
   width: 100%;
-  pointer-events:none; /* This makes sure that we can still click outside of the modal to close it */
+  pointer-events:none;
 }
 .vertical-align-center {
-  /* To center vertically */
   display: table-cell;
   vertical-align: middle;
   pointer-events:none;
@@ -86,12 +90,12 @@ hr.star-dark:after {
 }
 
 hr.star-light {
-  border-color: #fff;
+  border-color: #2C3E50;
 }
 
 hr.star-light:after {
-  color: #fff;
-  background-color: #18BC9C;
+  color: #2C3E50;;
+  background-color: white;
 }
 
 hr.star-dark {
@@ -393,10 +397,6 @@ a:focus, a:hover, a:active {
 
 .btn {
   border-width: 2px;
-}
-
-.bg-primary {
-  background-color: #18BC9C !important;
 }
 
 .bg-secondary {
