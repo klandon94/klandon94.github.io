@@ -435,4 +435,11 @@ a:focus, a:hover, a:active {
   object{
     height:400px;
   }
+  .btn-primary{
+    margin-bottom:5px;
+  }
+  .lead{
+    font-size:15px;
+    padding-left: 10px;
+  }
 }
